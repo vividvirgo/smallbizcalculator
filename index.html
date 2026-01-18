@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmallBizCalculator – Break-Even Point Calculator</title>
+  <meta name="description" content="Calculate your business break-even point. Find how many sales you need to cover costs and start making a profit." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Break-Even Point Calculator</h1>
+    <p>Find how many sales your business needs each month to cover costs.</p>
+
+    <div class="calculator">
+      <label>Monthly Fixed Costs ($)</label>
+      <input type="number" id="fixedCosts" placeholder="Example: 2500" />
+
+      <label>Revenue per Sale ($)</label>
+      <input type="number" id="pricePerUnit" placeholder="Example: 50" />
+
+      <label>Variable Cost per Sale ($)</label>
+      <input type="number" id="variableCost" placeholder="Example: 20" />
+
+      <button onclick="calculateBreakEven()">Calculate</button>
+
+      <div class="results" id="results"></div>
+    </div>
+
+    <div class="content">
+      <h2>How this break-even calculator works</h2>
+      <p>
+        This tool calculates how many sales you need to cover your fixed and variable costs.
+        It helps small business owners understand pricing, profitability, and risk.
+      </p>
+
+      <h2>What is a break-even point?</h2>
+      <p>
+        Your break-even point is when total revenue equals total costs.
+        Below this point, your business loses money. Above it, you generate profit.
+      </p>
+    </div>
+
+    <footer class="footer">
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="terms.html">Terms</a> ·
+      <a href="about.html">About</a> ·
+      <a href="contact.html">Contact</a>
+      <p class="disclaimer">Disclaimer: This calculator is for informational purposes only.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
